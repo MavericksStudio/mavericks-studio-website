@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mavericks Studio | AI Advisory & Innovation Partners</title>
+    <meta name="description" content="Boutique AI Advisory & Innovation Partners. We help organizations ride the transformative wave of AI with confidence to achieve the extraordinary.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cursor follower -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="Mavericks Studio" class="logo-img">
+            </a>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#approach">Approach</a>
+                <a href="#work">Work</a>
+                <a href="#contact" class="nav-cta">Start a Project</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-links">
+            <a href="#services">Services</a>
+            <a href="#approach">Approach</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Start a Project</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="grid-pattern"></div>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge animate-in" style="--delay: 0">
+                <span class="badge-dot"></span>
+                AI Advisory & Innovation Partners
+            </div>
+            <h1 class="hero-title animate-in" style="--delay: 1">
+                We help bold<br>
+                organizations<br>
+                <span class="title-accent">achieve the<br>extraordinary</span>
+            </h1>
+            <p class="hero-subtitle animate-in" style="--delay: 2">
+                We help organizations ride the transformative wave of AI 
+                with confidence to achieve the extraordinary.
+            </p>
+            <div class="hero-cta animate-in" style="--delay: 3">
+                <a href="#contact" class="btn btn-primary">
+                    <span>Let's Talk</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#work" class="btn btn-ghost">View Our Work</a>
+            </div>
+        </div>
+        <div class="scroll-indicator animate-in" style="--delay: 4">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-value">
+                    <span class="stat-number" data-count="50">0</span><span class="stat-suffix">+</span>
+                </div>
+                <span class="stat-label">AI Projects Delivered</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <div class="stat-value">
+                    <span class="stat-prefix">$</span><span class="stat-number" data-count="12">0</span><span class="stat-suffix">M+</span>
+                </div>
+                <span class="stat-label">In Value Created</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <div class="stat-value">
+                    <span class="stat-number" data-count="14">0</span><span class="stat-suffix">+</span>
+                </div>
+                <span class="stat-label">Years of Experience</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Bar -->
+    <section class="clients-bar">
+        <div class="clients-container">
+            <span class="clients-label">Trusted by innovative companies</span>
+            <div class="clients-logos">
+                <div class="client-logo">Google</div>
+                <div class="client-logo">Amazon</div>
+                <div class="client-logo">Sony Interactive Entertainment</div>
+                <div class="client-logo">Votorantim Cimentos</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">What We Do</span>
+                <h2 class="section-title">
+                    Strategic AI services<br>
+                    <span class="text-muted">for ambitious teams</span>
+                </h2>
+            </div>
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 14v10l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>AI Strategy & Roadmapping</h3>
+                    <p>Chart your AI journey with clarity. We identify high-impact opportunities, assess readiness, and build actionable roadmaps aligned with your business goals.</p>
+                    <ul class="service-tags">
+                        <li>Opportunity Assessment</li>
+                        <li>ROI Modeling</li>
+                        <li>Implementation Planning</li>
+                    </ul>
+                </article>
+                <article class="service-card featured">
+                    <div class="service-badge">Most Popular</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 24h16M24 16v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Custom AI Development</h3>
+                    <p>Purpose-built AI solutions that solve real problems. From intelligent automation to generative AI applications, we craft software that transforms operations.</p>
+                    <ul class="service-tags">
+                        <li>LLM Applications</li>
+                        <li>Computer Vision</li>
+                        <li>Intelligent Automation</li>
+                    </ul>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <path d="M24 4l18 10v20L24 44 6 34V14L24 4z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>AI Integration & MLOps</h3>
+                    <p>Embed AI seamlessly into your existing ecosystem. We handle architecture, integration, deployment pipelines, and ongoing optimization.</p>
+                    <ul class="service-tags">
+                        <li>Systems Architecture</li>
+                        <li>API Development</li>
+                        <li>Continuous Deployment</li>
+                    </ul>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <path d="M12 38V22M24 38V10M36 38V26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Data & Analytics</h3>
+                    <p>Unlock the value hidden in your data. We design data strategies, build modern pipelines, and create analytics platforms that drive decisions.</p>
+                    <ul class="service-tags">
+                        <li>Data Architecture</li>
+                        <li>BI & Visualization</li>
+                        <li>Predictive Analytics</li>
+                    </ul>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <circle cx="18" cy="18" r="10" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="30" cy="30" r="10" stroke="currentColor" stroke-width="2"/>
+                            <path d="M25 23l-2-2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>AI Workshops & Training</h3>
+                    <p>Empower your teams to leverage AI effectively. Hands-on workshops, executive briefings, and tailored training programs that build lasting capability.</p>
+                    <ul class="service-tags">
+                        <li>Executive Education</li>
+                        <li>Team Enablement</li>
+                        <li>Prompt Engineering</li>
+                    </ul>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <path d="M24 4v8M24 36v8M44 24h-8M12 24H4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="24" cy="24" r="12" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="24" cy="24" r="4" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Fractional AI Leadership</h3>
+                    <p>Strategic AI guidance without the full-time commitment. Our fractional leaders embed with your team to drive AI initiatives and build internal muscle.</p>
+                    <ul class="service-tags">
+                        <li>Fractional CTO/CIO</li>
+                        <li>Team Mentorship</li>
+                        <li>Governance Design</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="approach" id="approach">
+        <div class="section-container">
+            <div class="approach-grid">
+                <div class="approach-content">
+                    <span class="section-tag">Our Approach</span>
+                    <h2 class="section-title">
+                        Partner-led.<br>
+                        <span class="text-accent">Outcome-obsessed.</span>
+                    </h2>
+                    <p class="approach-text">
+                        We're not a body shop. Every engagement is led by senior practitioners who've 
+                        built and scaled AI solutions at the world's most ambitious companies. We stay 
+                        small by design—so we can go deep, move fast, and deliver work that matters.
+                    </p>
+                    <div class="approach-values">
+                        <div class="value-item">
+                            <div class="value-number">01</div>
+                            <div class="value-content">
+                                <h4>Radical Clarity</h4>
+                                <p>No jargon. No hand-waving. We make the complex accessible and the ambiguous actionable.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-number">02</div>
+                            <div class="value-content">
+                                <h4>Speed to Value</h4>
+                                <p>We ship early and iterate fast. Proof-of-value in weeks, not quarters.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-number">03</div>
+                            <div class="value-content">
+                                <h4>Build to Last</h4>
+                                <p>Solutions that scale, teams that grow, and competitive advantages that compound.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="approach-visual">
+                    <div class="visual-card">
+                        <div class="visual-grid">
+                            <div class="visual-block"></div>
+                            <div class="visual-block"></div>
+                            <div class="visual-block"></div>
+                            <div class="visual-block"></div>
+                            <div class="visual-block active"></div>
+                            <div class="visual-block"></div>
+                            <div class="visual-block"></div>
+                            <div class="visual-block"></div>
+                            <div class="visual-block"></div>
+                        </div>
+                        <div class="visual-overlay">
+                            <span class="visual-label">AI Maturity</span>
+                            <span class="visual-value">Level 4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="work" id="work">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Selected Work</span>
+                <h2 class="section-title">
+                    Real impact,<br>
+                    <span class="text-muted">proven results</span>
+                </h2>
+            </div>
+            <div class="work-grid">
+                <article class="work-card large">
+                    <div class="work-image">
+                        <div class="work-placeholder">
+                            <div class="placeholder-shape shape-1"></div>
+                            <div class="placeholder-shape shape-2"></div>
+                        </div>
+                    </div>
+                    <div class="work-content">
+                        <span class="work-category">AI Strategy • Logistics Services</span>
+                        <h3>Construction Material Industry AI Transformation</h3>
+                        <p>Developed a comprehensive AI roadmap and delivered three production pilots, resulting in $2M annual savings in document processing and automation.</p>
+                        <div class="work-stats">
+                            <div class="work-stat">
+                                <span class="work-stat-value">87%</span>
+                                <span class="work-stat-label">Faster Processing</span>
+                            </div>
+                            <div class="work-stat">
+                                <span class="work-stat-value">$2M</span>
+                                <span class="work-stat-label">Annual Savings</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="work-card">
+                    <div class="work-image">
+                        <div class="work-placeholder alt">
+                            <div class="placeholder-shape shape-3"></div>
+                        </div>
+                    </div>
+                    <div class="work-content">
+                        <span class="work-category">Custom Development • Civil Engineering</span>
+                        <h3>Damage Diagnostic AI Platform</h3>
+                        <p>Built an AI-powered damage diagnostic assistant that reduced average diagnosis time by 85%.</p>
+                    </div>
+                </article>
+                <article class="work-card">
+                    <div class="work-image">
+                        <div class="work-placeholder">
+                            <div class="placeholder-shape shape-4"></div>
+                        </div>
+                    </div>
+                    <div class="work-content">
+                        <span class="work-category">AI + MLOps • E-Commerce</span>
+                        <h3>AI Native Platform + Recommendation Engine</h3>
+                        <p>Deployed an AI Platform with a personalization engine serving 10M+ daily recommendations with 99.9% uptime.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial">
+        <div class="section-container">
+            <div class="testimonial-content">
+                <svg class="quote-icon" viewBox="0 0 48 48" fill="currentColor">
+                    <path d="M14 24h-4c0-5.5 4.5-10 10-10v4c-3.3 0-6 2.7-6 6zm20 0h-4c0-5.5 4.5-10 10-10v4c-3.3 0-6 2.7-6 6z"/>
+                </svg>
+                <blockquote>
+                    Mavericks Studio didn't just deliver a solution—they transformed how we think about AI. 
+                    Their strategic clarity and execution speed are unmatched. We went from idea to production 
+                    in 8 weeks.
+                </blockquote>
+                <div class="testimonial-author">
+                    <div class="author-avatar">SC</div>
+                    <div class="author-info">
+                        <span class="author-name">Sarah Chen</span>
+                        <span class="author-role">Chief Digital Officer, Fortune 500 Retailer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="cta-bg">
+            <div class="cta-gradient"></div>
+        </div>
+        <div class="section-container">
+            <div class="cta-content">
+                <h2 class="cta-title">
+                    Ready to ride the<br>
+                    <span class="text-accent">wave of AI?</span>
+                </h2>
+                <p class="cta-text">
+                    Let's explore what's possible. Book a 30-minute discovery call with one of our partners—no pitch, just a conversation about your ambitions and how AI might accelerate them.
+                </p>
+                <div class="cta-actions">
+                    <a href="mailto:hello@mavericksstudio.com" class="btn btn-primary btn-large">
+                        <span>Schedule a Call</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <span class="cta-note">or email us at <a href="mailto:hello@mavericksstudio.com">hello@mavericksstudio.com</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="assets/logo.png" alt="Mavericks Studio" class="logo-img">
+                    </a>
+                    <p>Boutique AI Advisory & Innovation Partners. Helping organizations achieve the extraordinary.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <a href="#services">AI Strategy</a>
+                        <a href="#services">Custom Development</a>
+                        <a href="#services">MLOps & Integration</a>
+                        <a href="#services">Training</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="about.html">About</a>
+                        <a href="#work">Case Studies</a>
+                        <a href="careers.html">Careers</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mavericks Studio. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
