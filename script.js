@@ -1,11 +1,9 @@
 /**
- * MAVERICKS STUDIO — interactions
- * "Hermitage" edition. Mobile menu, scroll reveal, animated counters,
- * terminal-style action block (tabs + copy), nav background on scroll,
- * and gentle orb parallax. No dependencies.
+ * MAVERICKS STUDIO — navigation, progressive reveal, and counters.
+ * No dependencies; content remains visible when JavaScript is unavailable.
  */
 (() => {
-   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+   document.documentElement.classList.add('js');
 
    document.addEventListener('DOMContentLoaded', () => {
         initNavBackground();
@@ -13,8 +11,6 @@
         initSmoothScroll();
         initReveal();
         initCounters();
-        initTerminal();
-        if (!reduceMotion) initParallax();
      });
 
    /* ---- Nav background on scroll (fixed after hero) ------------------ */
@@ -98,53 +94,5 @@
             else el.textContent = target;
         };
         requestAnimationFrame(step);
-   }
-
-   /* ---- Terminal-style action block (tabs + copy) ---------------------- */
-   function initTerminal() {
-        const term = document.querySelector('[data-terminal]');
-        if (!term) return;
-        const tabs = term.querySelectorAll('[data-tab]');
-        const bodies = term.querySelectorAll('[data-terminal-panel]');
-
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                const key = tab.dataset.tab;
-                tabs.forEach(t => t.setAttribute('aria-selected', t === tab ? 'true' : 'false'));
-                bodies.forEach(b => b.hidden = b.dataset.terminalPanel !== key);
-            });
-        });
-
-        term.querySelectorAll('[data-copy]').forEach(btn => {
-            btn.addEventListener('click', async () => {
-                const text = btn.dataset.copy;
-                try { await navigator.clipboard.writeText(text); flash(btn, 'Copied'); }
-                catch { /* fallback */ flash(btn, text); }
-            });
-        });
-        function flash(btn, label) {
-            const labelEl = btn.querySelector('.copy-label');
-            if (!labelEl) return;
-            const prev = labelEl.textContent;
-            labelEl.textContent = label;
-            btn.classList.add('copied');
-            setTimeout(() => { labelEl.textContent = prev; btn.classList.remove('copied'); }, 1600);
-        }
-   }
-
-   /* ---- Orb parallax ------------------------------------------------- */
-   function initParallax() {
-        const orbs = document.querySelectorAll('.orb');
-        if (!orbs.length) return;
-        let ticking = false;
-        window.addEventListener('scroll', () => {
-            if (ticking) return;
-            ticking = true;
-            requestAnimationFrame(() => {
-                const y = window.scrollY;
-                orbs.forEach((o, i) => { o.style.transform = `translate3d(0, ${y * (0.06 + i * 0.05)}px, 0)`; });
-                ticking = false;
-            });
-        }, { passive:true });
    }
 })();
