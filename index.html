@@ -187,60 +187,68 @@
    <section class="brand-principles" id="approach" aria-labelledby="brand-principles-title">
         <div class="section-container">
             <header class="brand-principles-head" data-reveal>
-                <span class="count">02 · Our Approach</span>
-                <h2 id="brand-principles-title">The Mavericks<br><em>operating system</em></h2>
-                <div class="os-intro">
-                    <p class="os-manifesto">Partner-led.<br><strong>Outcome-obsessed.</strong></p>
-                    <p>We're not a body shop. Every engagement is led by senior practitioners who've built and scaled AI solutions at the world's most ambitious companies. We stay small by design—so we can go deep, move fast, and deliver work that matters.</p>
+                <div class="os-heading">
+                    <span class="count">02 · Our Approach</span>
+                    <span class="os-heading-rule" aria-hidden="true"></span>
+                    <h2 id="brand-principles-title">The Mavericks<br><em>operating system</em></h2>
+                    <p class="os-manifesto">Partner-led. <strong>Outcome-obsessed.</strong></p>
                 </div>
+                <p class="os-summary">We're not a body shop. Every engagement is led by senior practitioners who've built and scaled AI solutions at the world's most ambitious companies. We stay small by design—so we can go deep, move fast, and deliver work that matters.</p>
             </header>
 
-            <div class="principles-grid">
-                <article class="principle" data-reveal>
-                    <img src="assets/icon-wave.png" alt="" aria-hidden="true">
-                    <span class="principle-no">01</span>
-                    <h3>Mavericks</h3>
-                    <p>Trailblazers who challenge the status quo and create new possibilities.</p>
-                </article>
-                <article class="principle" data-reveal>
-                    <img src="assets/icon-mountain.png" alt="" aria-hidden="true">
-                    <span class="principle-no">02</span>
-                    <h3>Peak Performance</h3>
-                    <p>Helping organizations reach new heights through intelligent strategy and execution.</p>
-                </article>
-                <article class="principle" data-reveal>
-                    <img src="assets/icon-flow.png" alt="" aria-hidden="true">
-                    <span class="principle-no">03</span>
-                    <h3>Adapt &amp; Flow</h3>
-                    <p>Agile, fluid and resilient solutions designed for a constantly changing world.</p>
-                </article>
-                <article class="principle" data-reveal>
-                    <img src="assets/icon-north.png" alt="" aria-hidden="true">
-                    <span class="principle-no">04</span>
-                    <h3>Guiding North</h3>
-                    <p>Navigating complexity with clarity, purpose and unwavering direction.</p>
-                </article>
+            <div class="os-journey" data-reveal>
+                <svg class="os-journey-path" viewBox="0 0 1400 300" preserveAspectRatio="none" aria-hidden="true">
+                    <defs>
+                        <filter id="journey-glow" x="-20%" y="-50%" width="140%" height="200%">
+                            <feGaussianBlur stdDeviation="7" result="blur"/>
+                            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                        </filter>
+                        <linearGradient id="journey-gold" x1="0" x2="1">
+                            <stop offset="0" stop-color="#d4af37"/>
+                            <stop offset=".55" stop-color="#f2c94c"/>
+                            <stop offset="1" stop-color="#ffcf4a"/>
+                        </linearGradient>
+                    </defs>
+                    <path class="journey-ambient" d="M10 235 C125 115 240 250 360 145 S565 205 685 155 S825 230 950 140 S1125 210 1230 125 S1345 85 1390 30"/>
+                    <path class="journey-line" d="M10 235 C125 115 240 250 360 145 S565 205 685 155 S825 230 950 140 S1125 210 1230 125 S1345 85 1390 30"/>
+                    <circle cx="10" cy="235" r="5"/><circle cx="360" cy="145" r="4"/><circle cx="685" cy="155" r="4"/><circle cx="950" cy="140" r="4"/><circle cx="1230" cy="125" r="4"/>
+                    <path class="journey-arrow" d="m1370 35 20-5-4 21"/>
+                </svg>
+
+                <div class="principles-grid">
+                    <article class="principle">
+                        <div class="principle-icon"><img src="assets/icon-wave.png" alt="" aria-hidden="true"></div>
+                        <div class="principle-copy"><span class="principle-no">01</span><h3>Mavericks</h3><span class="principle-rule"></span><p>Trailblazers who challenge the status quo and create new possibilities.</p></div>
+                    </article>
+                    <article class="principle">
+                        <div class="principle-icon"><img src="assets/icon-mountain.png" alt="" aria-hidden="true"></div>
+                        <div class="principle-copy"><span class="principle-no">02</span><h3>Peak<br>Performance</h3><span class="principle-rule"></span><p>Helping organizations reach new heights through intelligent strategy and execution.</p></div>
+                    </article>
+                    <article class="principle">
+                        <div class="principle-icon"><img src="assets/icon-flow.png" alt="" aria-hidden="true"></div>
+                        <div class="principle-copy"><span class="principle-no">03</span><h3>Adapt<br>&amp; Flow</h3><span class="principle-rule"></span><p>Agile, fluid and resilient solutions designed for a constantly changing world.</p></div>
+                    </article>
+                    <article class="principle">
+                        <div class="principle-icon"><img src="assets/icon-north.png" alt="" aria-hidden="true"></div>
+                        <div class="principle-copy"><span class="principle-no">04</span><h3>Guiding<br>North</h3><span class="principle-rule"></span><p>Navigating complexity with clarity, purpose and unwavering direction.</p></div>
+                    </article>
+                </div>
             </div>
 
             <div class="os-delivery" data-reveal>
-                <div class="os-delivery-label">
-                    <span>How we deliver</span>
-                </div>
+                <div class="os-delivery-label"><span>How we deliver</span></div>
                 <div class="os-values">
                     <article class="os-value">
-                        <span>01</span>
-                        <h3>Radical Clarity</h3>
-                        <p>No jargon. No hand-waving. We make the complex accessible and the ambiguous actionable.</p>
+                        <img src="assets/icon-clarity.png" alt="" aria-hidden="true">
+                        <div><span>01</span><h3>Radical Clarity</h3><p>No jargon. No hand-waving. We make the complex accessible and the ambiguous actionable.</p></div>
                     </article>
                     <article class="os-value">
-                        <span>02</span>
-                        <h3>Speed to Value</h3>
-                        <p>We ship early and iterate fast. Proof-of-value in weeks, not quarters.</p>
+                        <img src="assets/icon-speed.png" alt="" aria-hidden="true">
+                        <div><span>02</span><h3>Speed to Value</h3><p>We ship early and iterate fast. Proof-of-value in weeks, not quarters.</p></div>
                     </article>
                     <article class="os-value">
-                        <span>03</span>
-                        <h3>Build to Last</h3>
-                        <p>Solutions that scale, teams that grow, and competitive advantages that compound.</p>
+                        <img src="assets/icon-lasting.png" alt="" aria-hidden="true">
+                        <div><span>03</span><h3>Build to Last</h3><p>Solutions that scale, teams that grow, and competitive advantages that compound.</p></div>
                     </article>
                 </div>
             </div>
